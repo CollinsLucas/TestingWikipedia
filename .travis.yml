@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.9"
+  - "nightly"
+install:
+  - "pip install pytest"
+  - "pip install selenium"
+script: python -m pytest gitremote/test/search_test.py
+
